@@ -1,0 +1,63 @@
+
+    \frame{
+        \frametitle{Package}
+    }
+
+    \frame{
+        \frametitle{Funktionale Simulation}
+
+    }
+    \section{Funktionale Simulation}
+
+    \frame{
+        \frametitle{Timing - Simulation}
+        %\csvautotabular{times.csv}
+        \includegraphics[width=0.8\textwidth,height=0.8\textheight]{func_sim.pdf}
+    }
+    \section{Funktionale Simulation}
+
+
+%The following is a list of a few of the functions you can perform on your designs in the FPGA Editor.
+%    Place and route critical components before running the automatic place and route tools.
+%    Finish placement and routing if the routing program does not completely route your design.
+%    Add probes to your design to examine the signal states of the targeted device. Probes are used to route the value of internal nets to an IOB for analysis during the debugging of a device.
+%    Cross-probe your design with Timing Analyzer.
+%    Run the BitGen program and download the resulting BIT file to the targeted device.
+%    View and change the nets connected to the capture units of a ChipScope ILA core in your design.
+%    Use the ILA command to write a ChipScope Import document (.cdc) file
+%    Create an entire design by hand (advanced users).
+    \frame{
+        \frametitle{FPGA-Editor}
+        \begin{columns}
+            \begin{column}{0.5\textwidth}
+            \begin{enumerate}
+                \item Manuelles Platzieren und
+                \item blub
+            \end{enumerate}
+
+            \end{column}
+            \begin{column}{0.5\textwidth}
+                \begin{center}
+                some text here some text here some text here some text here some text here
+            %\includegraphics[width=0.5\textwidth]{image1.jpg}
+                \end{center}
+            \end{column}
+        \end{columns}
+    }
+
+    \frame{
+        \frametitle{FPGA-Editor}
+        \includegraphics[width=\textwidth]{editor1.png}
+    }
+
+    \frame{
+        \frametitle{FPGA-Editor}
+        \includegraphics[width=\textwidth]{editor_fine.png}
+    }
+
+     \frame{
+        \frametitle{FPGA-Editor}
+        \includegraphics[width=\textwidth]{editor_fine.png}
+    }
+
+\end{document}

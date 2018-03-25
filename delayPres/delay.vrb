@@ -1,0 +1,19 @@
+\frametitle{Synthetisierbare Architektur}
+        \begin{lstlisting}[style=vhdl]
+BEGIN
+
+  lut_instance: LUT1
+    GENERIC MAP (
+      INIT => "0000000000000010"
+      )   -- Buffer 10
+
+    PORT MAP (
+      O  => intsig_delay(i),
+      I0 => intsig_delay(i-1)
+      );
+
+END GENERATE;
+intsig_delay(0) <= n_del_in;
+n_del_out <= intsig_delay(n);
+END deterministic;
+        \end{lstlisting}
