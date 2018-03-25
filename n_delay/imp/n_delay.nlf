@@ -1,0 +1,30 @@
+Release 13.1 - netgen O.40d (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Command Line: netgen -mhf -ofmt vhdl -sim -tm n_delay -w n_delay n_delay.vhd  
+
+Read and Annotate design 'n_delay.ncd' ...
+Loading device for application Rf_Device from file '3s700a.nph' in environment
+/data/cae/ise13_1/ISE/.
+   "delay_test" is an NCD, version 3.2, device xc3s700an, package fgg484, speed
+-4
+Loading constraints from 'n_delay.pcf'...
+The number of routable networks is 8
+Processing design ... 
+  Preping design's networks ...
+  Preping design's macros ...
+Writing multiple VHDL netlists for design 'delay_test' ...
+Writing multiple VHDL SDF files for design 'delay_test' ...
+Writing hierarchy information file 'n_delay_mhf_info.txt' ...
+INFO:NetListWriters:635 - The generated VHDL netlist contains Xilinx SIMPRIM
+   simulation primitives and has to be used with SIMPRIM library for correct
+   compilation and simulation. 
+INFO:NetListWriters - Xilinx recommends running separate simulations to check
+   for setup by specifying the MAX field in the SDF file and for hold by
+   specifying the MIN field in the SDF file. Please refer to Simulator
+   documentation for more details on specifying MIN and MAX field in the SDF.
+INFO:NetListWriters:665 - For more information on how to pass the SDF switches
+   to the simulator, see your Simulator tool documentation.
+Number of warnings: 0
+Number of info messages: 3
+Total memory usage is 276088 kilobytes

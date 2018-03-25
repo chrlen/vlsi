@@ -1,0 +1,10 @@
+#@ # 
+#@ # Running scirocco Version D-2010.06 for amd64 -- May 24, 2010
+#@ # Date:   Thu Feb  1 17:24:59 2018
+#@ # Run by: vlsi02@ipc694.inf-ra.uni-jena.de
+#@ 
+
+source -echo -verbose /home/vlsi02/vlsi/n_delay//ini/delay.ini
+#@ dump -vpd -o functional.vpd -deep func_tb
+#@ run 500ns
+#@ q

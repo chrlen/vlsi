@@ -1,0 +1,82 @@
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.ALL;
+
+-- Attribute fuer die Synthese
+LIBRARY synplify;
+USE synplify.attributes.ALL;
+
+-- FPGA-Komponentendeklaration
+Library UNISIM;
+use UNISIM.vcomponents.all;
+
+
+ENTITY n_delay IS
+    GENERIC (
+      n : positive := 8);   -- Anzahl der Verzoegerungs-LUTs
+  PORT (del_in  :       IN     std_logic;
+        del_out :       OUT    std_logic);
+END n_delay;
+----------------------------------------------------------------
+
+ARCHITECTURE generated OF n_delay IS
+
+-- fuer die Timingsimulation einzelner Komponenten (Module) ist es
+-- notwendig, eindeutige Komponentengrenzen zu garantieren
+--
+-- mit dem Attribut "syn_hier" wird die Art des Ausflachens gesteuert
+-- verschiedene Werte sind moeglich, "hard" garantiert den Erhalt der
+-- Komponentengrenzen ohne Ausnahme
+
+ATTRIBUTE syn_hier              : string;
+ATTRIBUTE syn_hier OF generated : ARCHITECTURE IS "hard";
+
+-- Die Grenzen muessen auch bei der FPGA-Implementierung erhalten
+-- bleiben
+--
+-- mit dem Attribut "xc_use_keep_hierarchy" wird diese Information an
+-- die EDIF- Datei uebergeben
+-- um dann ein Timing-Modell des betreffenden Moduls zu erzeugen, muss
+-- "netgen" mit der Option -mfh (multiple hierarchical files)
+-- aufgerufen werden, es entstehen Dateien:
+-- "Komponentenbezeichnung_sim.vhd" und "Komponentenbezeichnung_sim.sdf"
+
+ATTRIBUTE xc_use_xmodule                     : boolean;
+ATTRIBUTE xc_use_keep_hierarchy OF generated : ARCHITECTURE IS true;
+
+  SIGNAL intsig_delay  : std_logic_vector(n-2 DOWNTO 0);
+  --CONSTANT lutTime:time := 10 ns;
+  --SIGNAL test_sig : std_logic := '0';
+
+BEGIN
+	
+-- Verwendung der Bibliothekskomponente LUT1 (Lookuptabelle mit einem
+-- Eingang):
+--
+--       lut_instance: LUT1
+--        GENERIC MAP (
+--          INIT => "0000000000000010")   -- Inverter: 01, Buffer 02
+--        PORT MAP (
+--          O  => Ausgangssignal,  -- LUT general output
+--          I0 => Eingangssignal   -- LUT input
+--          );
+
+-- Architekturbeschreibung:
+
+
+intsig_delay(0) <= del_in;
+
+
+GEN_DELAY: for i in 0 to n-3 generate
+  lut_instance: LUT1
+        GENERIC MAP (
+          INIT => "0000000000000010"
+        	)   -- Inverter: 01, Buffer 10
+        
+        PORT MAP (
+          O  => intsig_delay(i+1),  -- LUT general output
+          I0 => intsig_delay(i)   -- LUT input
+          );
+
+end generate GEN_DELAY;
+del_out <= intsig_delay(n-2);
+END generated;        

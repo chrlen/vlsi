@@ -1,0 +1,255 @@
+SystemDesigner executable set to /data/cae/sn10/SFPGA/system_designer/bin/system_designer
+
+
+Starting:    /data/cae/sn10/SFPGA/linux_a_64/mbin/synbatch
+Install:     /data/cae/sn10/SFPGA
+Date:        Thu Feb  1 17:23:48 2018
+Version:     D-2010.03-SP1
+
+Arguments:   -product synplify_premier -tcl /home/vlsi02/vlsi/n_delay//ini/synplify.tcl -batch -verbose_log -log synplify_latch.log
+ProductType: synplify_premier
+
+License checkout: synplifypremierdp
+License: synplifypremierdp from server ipc627 (Using premium license)
+
+
+
+
+Warning: File already exists in project: "/home/vlsi02/vlsi/n_delay/vhdlsrc/n_delay.vhd"
+
+Running synthesis on proj_1:expdir
+
+Copying template /data/cae/sn10/SFPGA/lib/xilinx/run_ise.tcl to file /home/vlsi02/vlsi/n_delay/syn/expdir/run_ise.tcl
+
+log file: "/home/vlsi02/vlsi/n_delay/syn/expdir/n_delay.srr"
+
+
+
+Running flow compile_flow ...
+
+
+Running flow base_compile_flow ...
+
+
+Running HDL Compiler...
+Start Time:17:23:52
+
+
+Compiler Completed
+Return Code: 0
+Completion Time:17:23:54
+
+#Build: Synplify Premier D-2010.03-SP1, Build 079R, May 19 2010
+#install: /data/cae/sn10/SFPGA
+#OS: Linux 
+#Hostname: ipc694.inf-ra.uni-jena.de
+
+#Implementation: expdir
+
+#Thu Feb  1 17:23:48 2018
+
+$ Start of Compile
+#Thu Feb  1 17:23:52 2018
+
+Synopsys VHDL Compiler, version comp510rc, Build 073R, built May 14 2010
+@N|Running in 64-bit mode
+Copyright (C) 1994-2010, Synopsys Inc.  All Rights Reserved
+
+@N: CD720 :"/data/cae/sn10/SFPGA/lib/vhd/std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"/home/vlsi02/vlsi/n_delay/vhdlsrc/n_delay.vhd":21:7:21:16|Top entity is set to delay_test.
+VHDL syntax check successful!
+@N: CD630 :"/home/vlsi02/vlsi/n_delay/vhdlsrc/n_delay.vhd":21:7:21:16|Synthesizing work.delay_test.delay_test_arch 
+@N: CD630 :"/home/vlsi02/vlsi/n_delay/vhdlsrc/n_delay.vhd":9:7:9:13|Synthesizing work.n_delay.deterministic 
+@N: CD630 :"/data/cae/sn10/SFPGA/lib/xilinx/unisim.vhd":24783:7:24783:10|Synthesizing unisim.lut1.lut 
+Post processing for unisim.lut1.lut
+Post processing for work.n_delay.deterministic
+Post processing for work.delay_test.delay_test_arch
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Feb  1 17:23:53 2018
+
+###########################################################]
+
+
+Unrecognized part delay changed to XC3S50A
+
+
+Launching mapper in pro mode
+
+
+Running property_annotator...
+Start Time:17:23:58
+
+
+property_annotator Completed
+Return Code: 0
+Completion Time:17:24:00
+
+Analysis Property Generator Complete
+
+
+Running flow synthesis ...
+
+Launching mapper in pro mode
+
+
+Running Spartan3A Mapper...
+Start Time:17:24:05
+
+
+Spartan3A Mapper Completed
+Return Code: 0
+Completion Time:17:24:08
+
+Synopsys Xilinx Technology Mapper, Version map520rc, Build 073R, Built May 21 2010 15:56:38
+Copyright (C) 1994-2010, Synopsys Inc.  All Rights Reserved
+Product Version D-2010.03-SP1
+@N: MF249 |Running in 64-bit mode.
+@N: MF257 |Gated clock conversion enabled 
+Reading Xilinx I/O pad type table from file </data/cae/sn10/SFPGA/lib/xilinx/x_io_tbl.txt> 
+Reading Xilinx Rocket I/O parameter type table from file </data/cae/sn10/SFPGA/lib/xilinx/gttype.txt> 
+@N|Running in logic synthesis mode with enhanced optimization
+@N: MT206 |Autoconstrain Mode is ON
+@N|Only System clock will be Autoconstrained
+Finished Timing Extraction Phase. (Time elapsed 0h:00m:01s; Memory used current: 120MB peak: 123MB)
+
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+Finished RTL optimizations (Time elapsed 0h:00m:01s; Memory used current: 120MB peak: 123MB)
+
+Finished factoring (Time elapsed 0h:00m:01s; Memory used current: 120MB peak: 123MB)
+
+
+
+#################### START OF GENERATED CLOCK OPTIMIZATION REPORT ####################[
+
+======================================================================================
+                                Instance:Pin        Generated Clock Optimization Status
+======================================================================================
+
+
+##################### END OF GENERATED CLOCK OPTIMIZATION REPORT #####################]
+
+Finished gated-clock and generated-clock conversion (Time elapsed 0h:00m:01s; Memory used current: 120MB peak: 123MB)
+
+Finished generic timing optimizations - Pass 1 (Time elapsed 0h:00m:01s; Memory used current: 120MB peak: 123MB)
+
+Starting Early Timing Optimization (Time elapsed 0h:00m:01s; Memory used current: 120MB peak: 123MB)
+
+Finished Early Timing Optimization (Time elapsed 0h:00m:01s; Memory used current: 120MB peak: 123MB)
+
+Finished generic timing optimizations - Pass 2 (Time elapsed 0h:00m:01s; Memory used current: 120MB peak: 123MB)
+
+Finished preparing to map (Time elapsed 0h:00m:01s; Memory used current: 120MB peak: 123MB)
+
+Finished technology mapping (Time elapsed 0h:00m:01s; Memory used current: 120MB peak: 123MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+------------------------------------------------------------
+
+Net buffering Report for view:work.delay_test(delay_test_arch):
+No nets needed buffering.
+
+Net buffering Report for view:work.n_delay(deterministic):
+No nets needed buffering.
+
+Finished technology timing optimizations and critical path resynthesis (Time elapsed 0h:00m:01s; Memory used current: 120MB peak: 123MB)
+
+@N: FX164 |The option to pack flops in the IOB has not been specified 
+@N: FX623 |Packing into LUT62
+Finished restoring hierarchy (Time elapsed 0h:00m:01s; Memory used current: 120MB peak: 123MB)
+
+Writing Analyst data base /home/vlsi02/vlsi/n_delay/syn/expdir/n_delay.srm
+Finished Writing Netlist Databases (Time elapsed 0h:00m:01s; Memory used current: 119MB peak: 123MB)
+
+Writing EDIF Netlist and constraint files
+D-2010.03-SP1
+Finished Writing EDIF Netlist and constraint files (Time elapsed 0h:00m:01s; Memory used current: 120MB peak: 123MB)
+
+Writing VHDL Simulation files
+Finished Writing VHDL Simulation files (Time elapsed 0h:00m:01s; Memory used current: 120MB peak: 123MB)
+
+Starting Writing Gated Clock Conversion Report (Time elapsed 0h:00m:01s; Memory used current: 121MB peak: 123MB)
+
+@N: MF276 |Gated clock conversion enabled, but no gated clocks found in design 
+Finished Writing Gated Clock Conversion Report (Time elapsed 0h:00m:01s; Memory used current: 121MB peak: 123MB)
+
+Starting Writing Generated Clock Conversion Report (Time elapsed 0h:00m:01s; Memory used current: 121MB peak: 123MB)
+
+@N: MF333 |Generated clock conversion enabled, but no generated clocks found in design 
+Finished Writing Generated Clock Conversion Report (Time elapsed 0h:00m:01s; Memory used current: 121MB peak: 123MB)
+
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Thu Feb  1 17:24:07 2018
+#
+
+
+Top view:               delay_test
+Requested Frequency:    1.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report estimates place and route data. Please look at the place and route timing report for final timing..
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock..
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: NA
+
+
+
+
+
+
+Interface Information 
+*********************
+
+		No IO constraint found 
+
+
+##### END OF TIMING REPORT #####]
+
+---------------------------------------
+Resource Usage Report for delay_test 
+
+Mapping to part: xc3s50atq144-4
+LUT1            7 uses
+I/O ports: 2
+I/O primitives: 2
+IBUF           1 use
+OBUF           1 use
+
+I/O Register bits:                  0
+Register bits not including I/Os:   0 (0%)
+Total load per clock:
+
+
+
+Mapping Summary:
+Total  LUTs: 7 (0%)
+
+Mapper successful!
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Feb  1 17:24:07 2018
+
+###########################################################]
+
+
+TCL script complete: "/home/vlsi02/vlsi/n_delay//ini/synplify.tcl"
+
+exit status=0
+
+

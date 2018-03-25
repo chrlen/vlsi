@@ -1,0 +1,132 @@
+--
+-- Written by Synplicity
+-- Product Version "D-2010.03-SP1"
+-- Program "Synplify Pro", Mapper "map520rc, Build 073R"
+-- Thu Feb  1 17:24:06 2018
+--
+
+--
+-- Written by Synplify Pro version Build 073R
+-- Thu Feb  1 17:24:06 2018
+--
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+library UNISIM;
+use UNISIM.VCOMPONENTS.all;
+
+entity n_delay is
+port(
+  n_del_in :  in std_logic;
+  n_del_out :  out std_logic);
+end n_delay;
+
+architecture beh of n_delay is
+  signal INTSIG_DELAY : std_logic_vector(6 downto 1);
+  signal NN_1 : std_logic ;
+  signal NN_2 : std_logic ;
+  signal NN_3 : std_logic ;
+  signal NN_4 : std_logic ;
+begin
+\N_DELAY.1.LUT_INSTANCE\: LUT1 
+generic map(
+  INIT => X"2"
+)
+port map (
+  I0 => n_del_in,
+  O => INTSIG_DELAY(1));
+\N_DELAY.7.LUT_INSTANCE\: LUT1 
+generic map(
+  INIT => X"2"
+)
+port map (
+  I0 => INTSIG_DELAY(6),
+  O => n_del_out);
+\N_DELAY.6.LUT_INSTANCE\: LUT1 
+generic map(
+  INIT => X"2"
+)
+port map (
+  I0 => INTSIG_DELAY(5),
+  O => INTSIG_DELAY(6));
+\N_DELAY.2.LUT_INSTANCE\: LUT1 
+generic map(
+  INIT => X"2"
+)
+port map (
+  I0 => INTSIG_DELAY(1),
+  O => INTSIG_DELAY(2));
+\N_DELAY.5.LUT_INSTANCE\: LUT1 
+generic map(
+  INIT => X"2"
+)
+port map (
+  I0 => INTSIG_DELAY(4),
+  O => INTSIG_DELAY(5));
+\N_DELAY.4.LUT_INSTANCE\: LUT1 
+generic map(
+  INIT => X"2"
+)
+port map (
+  I0 => INTSIG_DELAY(3),
+  O => INTSIG_DELAY(4));
+\N_DELAY.3.LUT_INSTANCE\: LUT1 
+generic map(
+  INIT => X"2"
+)
+port map (
+  I0 => INTSIG_DELAY(2),
+  O => INTSIG_DELAY(3));
+II_GND: GND port map (
+    G => NN_3);
+II_VCC: VCC port map (
+    P => NN_4);
+end beh;
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+library UNISIM;
+use UNISIM.VCOMPONENTS.all;
+
+entity delay_test is
+port(
+delay_test_in :  in std_logic;
+delay_test_out :  out std_logic);
+end delay_test;
+
+architecture beh of delay_test is
+signal NN_1 : std_logic ;
+signal NN_2 : std_logic ;
+signal DELAY_TEST_IN_C : std_logic ;
+signal DELAY_TEST_OUT_C : std_logic ;
+signal NN_3 : std_logic ;
+signal NN_4 : std_logic ;
+component n_delay
+  port(
+    n_del_in :  in std_logic;
+    n_del_out :  out std_logic  );
+end component;
+begin
+DELAY_TEST_OUT_OBUF: OBUF port map (
+  O => delay_test_out,
+  I => DELAY_TEST_OUT_C);
+DELAY_TEST_IN_IBUF: IBUF port map (
+  O => DELAY_TEST_IN_C,
+  I => delay_test_in);
+N_DELAY_INST: n_delay port map (
+  n_del_in => DELAY_TEST_IN_C,
+  n_del_out => DELAY_TEST_OUT_C);
+II_GND: GND port map (
+  G => NN_3);
+II_VCC: VCC port map (
+  P => NN_4);
+end beh;
+

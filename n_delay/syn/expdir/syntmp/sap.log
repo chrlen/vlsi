@@ -1,0 +1,19 @@
+Synopsys Xilinx Technology Mapper, Version map520rc, Build 073R, Built May 21 2010 15:56:38
+Copyright (C) 1994-2010, Synopsys Inc.  All Rights Reserved
+Product Version D-2010.03-SP1
+@N: MF249 |Running in 64-bit mode.
+@N: MF257 |Gated clock conversion enabled 
+Reading Xilinx I/O pad type table from file </data/cae/sn10/SFPGA/lib/xilinx/x_io_tbl.txt> 
+Reading Xilinx Rocket I/O parameter type table from file </data/cae/sn10/SFPGA/lib/xilinx/gttype.txt> 
+@N|Running in logic synthesis mode with enhanced optimization
+@W: MF463 |Ignoring synthesis effort setting for the design. This is not supported by the current technology.
+@N: MT206 |Autoconstrain Mode is ON
+@N|Only System clock will be Autoconstrained
+Finished Timing Extraction Phase. (Time elapsed 0h:00m:01s; Memory used current: 120MB peak: 123MB)
+
+
+@N: BN225 |Writing default property annotation file /home/vlsi02/vlsi/n_delay/syn/expdir/n_delay.sap.
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Feb  1 17:23:59 2018
+
+###########################################################]

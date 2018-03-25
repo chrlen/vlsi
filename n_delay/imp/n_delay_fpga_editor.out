@@ -1,0 +1,388 @@
+#:C159   
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   SPARC M2.1 O.40d
+#Current Working Directory:
+#:D   /home/vlsi02/vlsi/n_delay/imp
+#Host Name:
+#:H   ipc694.inf-ra.uni-jena.de
+#Date/Time:
+#:T   Thu Feb  1 17:41:40 2018
+#------------------------------
+	#Reading n_delay.ncd...
+	#Loading device for application Rf_Device from file '3s700a.nph' in environment /data/cae/ise13_1/ISE/.
+	#   "delay_test" is an NCD, version 3.2, device xc3s700an, package fgg484, speed -4
+	#Design creation date: 2018.02.01.16.24.22
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+select -k comp 'delay_test_in'
+	#3
+unselect -all
+	#4
+select -k comp 'delay_test_in'
+	#5
+unselect -all
+	#6
+select comp 'delay_test_in'
+	#comp "delay_test_in",  site "E17",  bonded type = IBUF,  pad name = PAD100,  pin name = E17  (RPM grid X163Y98)
+	#7
+unselect -all
+	#8
+select comp 'delay_test_in'
+	#comp "delay_test_in",  site "E17",  bonded type = IBUF,  pad name = PAD100,  pin name = E17  (RPM grid X163Y98)
+	#9
+unselect -all
+	#10
+select comp 'delay_test_in'
+	#comp "delay_test_in",  site "E17",  bonded type = IBUF,  pad name = PAD100,  pin name = E17  (RPM grid X163Y98)
+	#11
+post block
+	#12
+unselect -all
+	#13
+unselect -all
+	#14
+unselect -all
+	#15
+select comp 'delay_test_in'
+	#comp "delay_test_in",  site "E17",  bonded type = IBUF,  pad name = PAD100,  pin name = E17  (RPM grid X163Y98)
+	#16
+unselect comp 'delay_test_in'
+	#17
+select -k comp 'delay_test_out_c'
+	#18
+unselect comp 'delay_test_out_c'
+	#19
+select -k comp 'n_delay_inst/intsig_delay(2)'
+	#20
+unselect comp 'n_delay_inst/intsig_delay(2)'
+	#21
+select -k comp 'delay_test_out_c'
+	#22
+unselect -all
+	#23
+select comp 'delay_test_in'
+	#comp "delay_test_in",  site "E17",  bonded type = IBUF,  pad name = PAD100,  pin name = E17  (RPM grid X163Y98)
+	#24
+unselect -all
+	#25
+select comp 'delay_test_out'
+	#comp "delay_test_out",  site "D18",  bonded type = IOB,  pad name = PAD99,  pin name = D18  (RPM grid X163Y99)
+	#26
+unselect -all
+	#27
+select rpm 'n_delay_inst/hset'
+	#RPM n_delay_inst/hset, type RPM, refcomp "delay_test_out_c"
+	#28
+unselect -all
+	#29
+select rpm 'n_delay_inst/hset'
+	#RPM n_delay_inst/hset, type RPM, refcomp "delay_test_out_c"
+	#30
+unselect rpm 'n_delay_inst/hset'
+	#31
+select -k comp 'delay_test_out_c'
+	#32
+unselect comp 'delay_test_out_c'
+	#33
+select -k comp 'n_delay_inst/intsig_delay(2)'
+	#34
+unselect comp 'n_delay_inst/intsig_delay(2)'
+	#35
+select -k comp 'n_delay_inst/intsig_delay(3)'
+	#36
+unselect comp 'n_delay_inst/intsig_delay(3)'
+	#37
+select -k comp 'n_delay_inst/intsig_delay(6)'
+	#38
+unselect comp 'n_delay_inst/intsig_delay(6)'
+	#39
+select -k comp 'n_delay_inst/intsig_delay(3)'
+	#40
+unselect comp 'n_delay_inst/intsig_delay(3)'
+	#41
+select -k comp 'n_delay_inst/intsig_delay(2)'
+	#42
+unselect comp 'n_delay_inst/intsig_delay(2)'
+	#43
+select -k comp 'delay_test_out_c'
+	#44
+unselect -all
+	#45
+select rpm 'n_delay_inst/hset'
+	#RPM n_delay_inst/hset, type RPM, refcomp "delay_test_out_c"
+	#46
+unselect -all
+	#47
+select rpm 'n_delay_inst/hset'
+	#RPM n_delay_inst/hset, type RPM, refcomp "delay_test_out_c"
+	#48
+unselect -all
+	#49
+select rpm 'n_delay_inst/hset'
+	#RPM n_delay_inst/hset, type RPM, refcomp "delay_test_out_c"
+	#50
+unselect -all
+	#51
+select rpm 'n_delay_inst/hset'
+	#RPM n_delay_inst/hset, type RPM, refcomp "delay_test_out_c"
+	#52
+unselect rpm 'n_delay_inst/hset'
+	#53
+select -k comp 'delay_test_in'
+	#54
+unselect comp 'delay_test_in'
+	#55
+select -k comp 'delay_test_out'
+	#56
+unselect comp 'delay_test_out'
+	#57
+select -k comp 'delay_test_out_c'
+	#58
+unselect comp 'delay_test_out_c'
+	#59
+select -k comp 'n_delay_inst/intsig_delay(2)'
+	#60
+unselect comp 'n_delay_inst/intsig_delay(2)'
+	#61
+select -k comp 'n_delay_inst/intsig_delay(3)'
+	#62
+unselect comp 'n_delay_inst/intsig_delay(3)'
+	#63
+select -k comp 'n_delay_inst/intsig_delay(6)'
+	#64
+unselect -all
+	#65
+select comp 'delay_test_in'
+	#comp "delay_test_in",  site "E17",  bonded type = IBUF,  pad name = PAD100,  pin name = E17  (RPM grid X163Y98)
+	#66
+unselect -all
+	#67
+select comp 'delay_test_out'
+	#comp "delay_test_out",  site "D18",  bonded type = IOB,  pad name = PAD99,  pin name = D18  (RPM grid X163Y99)
+	#68
+unselect -all
+	#69
+select comp 'delay_test_in'
+	#comp "delay_test_in",  site "E17",  bonded type = IBUF,  pad name = PAD100,  pin name = E17  (RPM grid X163Y98)
+	#70
+unselect -all
+	#71
+select rpm 'n_delay_inst/hset'
+	#RPM n_delay_inst/hset, type RPM, refcomp "delay_test_out_c"
+	#72
+unselect rpm 'n_delay_inst/hset'
+	#73
+select -k comp 'delay_test_in'
+	#74
+unselect comp 'delay_test_in'
+	#75
+select -k comp 'delay_test_out'
+	#76
+unselect comp 'delay_test_out'
+	#77
+select -k comp 'delay_test_in'
+	#78
+unselect comp 'delay_test_in'
+	#79
+select -k comp 'delay_test_out'
+	#80
+unselect comp 'delay_test_out'
+	#81
+select -k comp 'n_delay_inst/intsig_delay(2)'
+	#82
+unselect comp 'n_delay_inst/intsig_delay(2)'
+	#83
+select -k comp 'delay_test_out_c'
+	#84
+unselect comp 'delay_test_out_c'
+	#85
+select -k comp 'n_delay_inst/intsig_delay(2)'
+	#86
+unselect comp 'n_delay_inst/intsig_delay(2)'
+	#87
+select -k comp 'n_delay_inst/intsig_delay(3)'
+	#88
+unselect comp 'n_delay_inst/intsig_delay(3)'
+	#89
+select -k comp 'n_delay_inst/intsig_delay(6)'
+	#90
+unselect comp 'n_delay_inst/intsig_delay(6)'
+	#91
+select -k comp 'delay_test_out_c'
+	#92
+unselect comp 'delay_test_out_c'
+	#93
+select -k comp 'n_delay_inst/intsig_delay(2)'
+	#94
+unselect comp 'n_delay_inst/intsig_delay(2)'
+	#95
+select -k comp 'n_delay_inst/intsig_delay(6)'
+	#96
+unselect comp 'n_delay_inst/intsig_delay(6)'
+	#97
+select -k comp 'n_delay_inst/intsig_delay(3)'
+	#98
+unselect comp 'n_delay_inst/intsig_delay(3)'
+	#99
+select -k comp 'n_delay_inst/intsig_delay(2)'
+	#100
+unselect -all
+	#101
+select rpm 'n_delay_inst/hset'
+	#RPM n_delay_inst/hset, type RPM, refcomp "delay_test_out_c"
+	#102
+unselect -all
+	#103
+select comp 'n_delay_inst/intsig_delay(2)'
+	#comp "n_delay_inst/intsig_delay(2)",  site "SLICE_X63Y95",  type = SLICEL  (RPM grid X163Y97)
+	#104
+post block
+	#105
+unselect -all
+	#106
+select rpm 'n_delay_inst/hset'
+	#RPM n_delay_inst/hset, type RPM, refcomp "delay_test_out_c"
+	#107
+unselect -all
+	#108
+select rpm 'n_delay_inst/hset'
+	#RPM n_delay_inst/hset, type RPM, refcomp "delay_test_out_c"
+	#109
+unselect -all
+	#110
+select comp 'n_delay_inst/intsig_delay(3)'
+	#comp "n_delay_inst/intsig_delay(3)",  site "SLICE_X63Y94",  type = SLICEL  (RPM grid X163Y96)
+	#111
+post block
+	#112
+unselect -all
+	#113
+select rpm 'n_delay_inst/hset'
+	#RPM n_delay_inst/hset, type RPM, refcomp "delay_test_out_c"
+	#114
+unselect -all
+	#115
+select comp 'n_delay_inst/intsig_delay(6)'
+	#comp "n_delay_inst/intsig_delay(6)",  site "SLICE_X62Y95",  type = SLICEL  (RPM grid X161Y97)
+	#116
+post block
+	#117
+unselect comp 'n_delay_inst/intsig_delay(6)'
+	#118
+select -k comp 'delay_test_out_c'
+	#119
+unselect -all
+	#120
+select rpm 'n_delay_inst/hset'
+	#RPM n_delay_inst/hset, type RPM, refcomp "delay_test_out_c"
+	#121
+unselect -all
+	#122
+select comp 'delay_test_out_c'
+	#comp "delay_test_out_c",  site "SLICE_X62Y94",  type = SLICEL  (RPM grid X161Y96)
+	#123
+post block
+	#124
+unselect -all
+	#125
+select rpm 'n_delay_inst/hset'
+	#RPM n_delay_inst/hset, type RPM, refcomp "delay_test_out_c"
+	#126
+unselect -all
+	#127
+select comp 'n_delay_inst/intsig_delay(2)'
+	#comp "n_delay_inst/intsig_delay(2)",  site "SLICE_X63Y95",  type = SLICEL  (RPM grid X163Y97)
+	#128
+post block
+	#129
+unselect -all
+	#130
+select rpm 'n_delay_inst/hset'
+	#RPM n_delay_inst/hset, type RPM, refcomp "delay_test_out_c"
+	#131
+unselect -all
+	#132
+select comp 'n_delay_inst/intsig_delay(3)'
+	#comp "n_delay_inst/intsig_delay(3)",  site "SLICE_X63Y94",  type = SLICEL  (RPM grid X163Y96)
+	#133
+post block
+	#134
+unselect -all
+	#135
+select -k comp 'delay_test_in'
+	#136
+unselect comp 'delay_test_in'
+	#137
+select -k comp 'delay_test_out'
+	#138
+unselect comp 'delay_test_out'
+	#139
+select -k comp 'delay_test_out_c'
+	#140
+unselect comp 'delay_test_out_c'
+	#141
+select -k comp 'n_delay_inst/intsig_delay(2)'
+	#142
+unselect comp 'n_delay_inst/intsig_delay(2)'
+	#143
+select -k comp 'n_delay_inst/intsig_delay(3)'
+	#144
+unselect comp 'n_delay_inst/intsig_delay(3)'
+	#145
+select -k comp 'n_delay_inst/intsig_delay(6)'
+	#146
+unselect comp 'n_delay_inst/intsig_delay(6)'
+	#147
+select -k comp 'delay_test_out_c'
+	#148
+unselect -all
+	#149
+select rpm 'n_delay_inst/hset'
+	#RPM n_delay_inst/hset, type RPM, refcomp "delay_test_out_c"
+	#150
+unselect -all
+	#151
+select comp 'delay_test_out_c'
+	#comp "delay_test_out_c",  site "SLICE_X62Y94",  type = SLICEL  (RPM grid X161Y96)
+	#152
+post block
+	#153
+unselect comp 'delay_test_out_c'
+	#154
+select -k comp 'n_delay_inst/intsig_delay(2)'
+	#155
+unselect comp 'n_delay_inst/intsig_delay(2)'
+	#156
+select -k comp 'n_delay_inst/intsig_delay(3)'
+	#157
+unselect comp 'n_delay_inst/intsig_delay(3)'
+	#158
+select -k comp 'n_delay_inst/intsig_delay(6)'
+	#159
+unselect comp 'n_delay_inst/intsig_delay(6)'
+	#160
+select -k comp 'n_delay_inst/intsig_delay(2)'
+	#161
+unselect -all
+	#162
+select rpm 'n_delay_inst/hset'
+	#RPM n_delay_inst/hset, type RPM, refcomp "delay_test_out_c"
+	#163
+unselect -all
+	#164
+select comp 'n_delay_inst/intsig_delay(2)'
+	#comp "n_delay_inst/intsig_delay(2)",  site "SLICE_X63Y95",  type = SLICEL  (RPM grid X163Y97)
+	#165
+post block
+	#166
+unselect comp 'n_delay_inst/intsig_delay(2)'
+	#167
+select -k comp 'delay_test_out_c'
+	#168
+unselect comp 'delay_test_out_c'
+	#169
+select -k comp 'n_delay_inst/intsig_delay(2)'

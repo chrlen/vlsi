@@ -1,0 +1,7 @@
+INFILE=/home/vlsi02/vlsi/n_delay/imp/n_delay.ncd
+OUTFILE=/home/vlsi02/vlsi/n_delay/imp/n_delay.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s700an-4fgg484
+WORKINGDIR=/home/vlsi02/vlsi/n_delay/imp
+LICENSE=ISE
+USER_INFO=176484163_177724675_210552573_807

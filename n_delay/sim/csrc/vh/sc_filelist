@@ -1,0 +1,34 @@
+# This file contains the list of objects to create scsim.
+
+# --- $(VHDL_OBJS) dependency 
+VHDL_OBJS= $(EVENT_OBJS) $(CY_OBJS)
+
+LN      =ln -sf
+
+EVENT_OBJS=\
+	vh/WORK_MHDL_SNPS_INTERNAL__DELAYPACK__.o\
+	vh/WORK_MHDL_SNPS_INTERNAL__FUNC_TB__ARCH.o\
+	vh/VITAL2000__VITAL_TIMING__.o\
+	vh/SIMPRIM__VCOMPONENTS.o\
+	vh/IEEE__STD_LOGIC_UNSIGNED__.o\
+	vh/VITAL2000__VITAL_PRIMITIVES__.o\
+	vh/SIMPRIM__VPACKAGE__.o\
+	vh/WORK_MHDL_SNPS_INTERNAL__N_DELAY__STRUCTURE.o\
+	vh/SIMPRIM__X_BUF__X_BUF_V.o\
+	vh/SIMPRIM__X_LUT4__X_LUT4_V.o\
+	vh/SIMPRIM__X_ONE__X_ONE_V.o\
+	vh/SIMPRIM__X_ROC__X_ROC_V.o\
+	vh/SIMPRIM__X_TOC__X_TOC_V.o\
+	vh/ScMain.o\
+	vh/scscomm.o\
+	vh/scsFilelist.o
+
+vh/ScMain.o: vh/ScMain.c
+	@$(CC) $(CFLAGS) -o $@ -I$(SYNOPSYS_SIM)/include -c vh/ScMain.c
+
+vh/scscomm.o: vh/scscomm.c
+	@$(CC) $(CFLAGS) -o $@ -I$(SYNOPSYS_SIM)/include -I$(SYNOPSYS_SIM)/amd64/lib -c vh/scscomm.c
+
+vh/scsFilelist.o: vh/scsFilelist.c
+	@$(CC) $(CFLAGS) -o $@ -I$(SYNOPSYS_SIM)/include -c vh/scsFilelist.c
+

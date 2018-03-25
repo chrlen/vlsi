@@ -1,0 +1,152 @@
+(DELAYFILE
+  (SDFVERSION "3.0")
+  (DESIGN "n_delay")
+  (DATE "Thu Feb  1 17:24:48 2018")
+  (VENDOR "Xilinx")
+  (PROGRAM "Xilinx SDF Writer")
+  (VERSION "O.40d")
+  (DIVIDER /)
+  (VOLTAGE 1.14)
+  (TEMPERATURE 85)
+  (TIMESCALE 1 ps)
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE delay_test_out_c_XUSED)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 140 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE delay_test_out_c_YUSED)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 155 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_LUT4")
+    (INSTANCE n_delay_5_lut_instance)
+      (DELAY
+        (ABSOLUTE
+          (PORT ADR2 ( 44 ))
+          (IOPATH ADR0 O ( 552 )( 552 ))
+          (IOPATH ADR1 O ( 552 )( 552 ))
+          (IOPATH ADR2 O ( 552 )( 552 ))
+          (IOPATH ADR3 O ( 552 )( 552 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE n_delay_inst_intsig_delay_6_XUSED)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 140 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE n_delay_inst_intsig_delay_6_YUSED)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 155 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_LUT4")
+    (INSTANCE n_delay_4_lut_instance)
+      (DELAY
+        (ABSOLUTE
+          (PORT ADR2 ( 44 ))
+          (IOPATH ADR0 O ( 552 )( 552 ))
+          (IOPATH ADR1 O ( 552 )( 552 ))
+          (IOPATH ADR2 O ( 552 )( 552 ))
+          (IOPATH ADR3 O ( 552 )( 552 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE n_delay_inst_intsig_delay_3_XUSED)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 97 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE n_delay_inst_intsig_delay_3_YUSED)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 102 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_LUT4")
+    (INSTANCE n_delay_1_lut_instance)
+      (DELAY
+        (ABSOLUTE
+          (PORT ADR2 ( 343 ))
+          (IOPATH ADR0 O ( 546 )( 546 ))
+          (IOPATH ADR1 O ( 546 )( 546 ))
+          (IOPATH ADR2 O ( 546 )( 546 ))
+          (IOPATH ADR3 O ( 546 )( 546 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE n_delay_inst_intsig_delay_2_XUSED)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 97 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_LUT4")
+    (INSTANCE n_delay_2_lut_instance)
+      (DELAY
+        (ABSOLUTE
+          (PORT ADR2 ( 43 ))
+          (IOPATH ADR0 O ( 546 )( 546 ))
+          (IOPATH ADR1 O ( 546 )( 546 ))
+          (IOPATH ADR2 O ( 546 )( 546 ))
+          (IOPATH ADR3 O ( 546 )( 546 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_LUT4")
+    (INSTANCE n_delay_7_lut_instance)
+      (DELAY
+        (ABSOLUTE
+          (PORT ADR1 ( 74 ))
+          (IOPATH ADR0 O ( 552 )( 552 ))
+          (IOPATH ADR1 O ( 552 )( 552 ))
+          (IOPATH ADR2 O ( 552 )( 552 ))
+          (IOPATH ADR3 O ( 552 )( 552 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_LUT4")
+    (INSTANCE n_delay_6_lut_instance)
+      (DELAY
+        (ABSOLUTE
+          (PORT ADR3 ( 60 ))
+          (IOPATH ADR0 O ( 552 )( 552 ))
+          (IOPATH ADR1 O ( 552 )( 552 ))
+          (IOPATH ADR2 O ( 552 )( 552 ))
+          (IOPATH ADR3 O ( 552 )( 552 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_LUT4")
+    (INSTANCE n_delay_3_lut_instance)
+      (DELAY
+        (ABSOLUTE
+          (PORT ADR0 ( 173 ))
+          (IOPATH ADR0 O ( 546 )( 546 ))
+          (IOPATH ADR1 O ( 546 )( 546 ))
+          (IOPATH ADR2 O ( 546 )( 546 ))
+          (IOPATH ADR3 O ( 546 )( 546 ))
+        )
+      )
+  )
+)

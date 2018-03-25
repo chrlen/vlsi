@@ -1,0 +1,6 @@
+#INST "n_delay_inst/"KEEP_HIERARCHY=TRUE; # nicht erforderlich, da als
+# Attribut im VHDL-File 
+NET "n_delay_inst/*intsig_delay*"KEEP=TRUE;
+#NET "delay_instance/*_sig*"KEEP=TRUE;
+
+

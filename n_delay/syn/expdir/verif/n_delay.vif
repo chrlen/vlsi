@@ -1,0 +1,55 @@
+#
+# Synplicity Verification Interface File
+# Generated using Synplify-pro
+#
+# Copyright (C) 1994-2010, Synopsys Inc.  All Rights Reserved
+
+# All rights reserved
+#
+
+# Set logfile options
+vif_set_result_file  delay_test.vlf
+
+# Set technology for TCL script
+vif_set_technology -architecture FPGA -vendor Xilinx
+
+# RTL and technology files
+vif_add_file -original -vhdl -lib work ../../vhdlsrc/int_to_ascii.vhd
+vif_add_file -original -vhdl -lib work ../../vhdlsrc/delayPack.vhd
+vif_add_file -original -vhdl -lib work ../../vhdlsrc/n_delay.vhd
+vif_add_file -original -vhdl -lib work ../../vhdlsrc/n_delay-deterministic.vhd
+vif_set_top_module -original -top delay_test
+ 
+vif_add_library -translated $XILINX/verilog/verification/unisims
+vif_add_library -translated $XILINX/verilog/verification/simprims
+vif_add_file -translated -verilog delay_test.vm
+vif_set_top_module -translated -top delay_test 
+# Read FSM encoding
+
+# Memory map points
+
+# SRL map points
+
+# Compiler constant registers
+
+# Compiler constant latches
+
+# Compiler RTL sequential redundancies
+
+# RTL sequential redundancies
+
+# Technology sequential redundancies
+
+# Inversion map points
+
+# Port mappping and directions
+
+# Black box mapping
+
+
+# Other sequential cells, including multidimensional arrays
+
+# Constant Registers
+
+# Retimed Registers
+

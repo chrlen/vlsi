@@ -1,0 +1,202 @@
+%%% protect protected_file
+@E
+@ 
+#
+#
+#
+# Created by Synplify VHDL Compiler version comp510rc, Build 073R from Synplicity, Inc.
+# Copyright 1994-2010 Synopsys, Inc. , All rights reserved.
+# Synthesis Netlist written on Thu Feb  1 17:23:53 2018
+#
+#
+#OPTIONS:"|-dw|-primux|-fixsmult|-sdff_counter|-infer_seqShift|-nram|-divnmod|-fast_synthesis|0|-encrypt|-pro|-lite|-ll|2000|-proto|-ui|-fid2|-ram|-sharing|on|-autosm|-dc_root|/data/cae/sn10|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"/data/cae/sn10/SFPGA/linux_a_64/c_vhdl":1273889242
+#CUR:"/data/cae/sn10/SFPGA/lib/vhd/location.map":1274135185
+#CUR:"/data/cae/sn10/SFPGA/lib/vhd/std.vhd":1273889171
+#CUR:"/home/vlsi02/vlsi/n_delay/vhdlsrc/int_to_ascii.vhd":1516193075
+#CUR:"/data/cae/sn10/SFPGA/lib/vhd/std1164.vhd":1273889171
+#CUR:"/home/vlsi02/vlsi/n_delay/vhdlsrc/delayPack.vhd":1516201971
+#CUR:"/home/vlsi02/vlsi/n_delay/vhdlsrc/n_delay.vhd":1517502226
+#CUR:"/home/vlsi02/vlsi/n_delay/vhdlsrc/n_delay-deterministic.vhd":1516815370
+#CUR:"/data/cae/sn10/SFPGA/lib/vhdl_sim/synplify.vhd":1273889171
+#CUR:"/data/cae/sn10/SFPGA/lib/vhd/unsigned.vhd":1273889171
+#CUR:"/data/cae/sn10/SFPGA/lib/vhd/arith.vhd":1273889171
+#CUR:"/data/cae/sn10/SFPGA/lib/vhd/synattr.vhd":1273896429
+#CUR:"/data/cae/sn10/SFPGA/lib/xilinx/unisim.vhd":1273896426
+#CUR:"/data/cae/sn10/SFPGA/lib/xilinx/compatible_unisim.vhd":1273896419
+#CUR:"/data/cae/sn10/SFPGA/lib/xilinx/compatible_unisim.vhd":1273896419
+f "/data/cae/sn10/SFPGA/lib/vhd/std.vhd"; # file 0
+af .is_vhdl 1;
+f "/home/vlsi02/vlsi/n_delay/vhdlsrc/int_to_ascii.vhd"; # file 1
+af .is_vhdl 1;
+f "/data/cae/sn10/SFPGA/lib/vhd/std1164.vhd"; # file 2
+af .is_vhdl 1;
+f "/home/vlsi02/vlsi/n_delay/vhdlsrc/delayPack.vhd"; # file 3
+af .is_vhdl 1;
+f "/home/vlsi02/vlsi/n_delay/vhdlsrc/n_delay.vhd"; # file 4
+af .is_vhdl 1;
+f "/home/vlsi02/vlsi/n_delay/vhdlsrc/n_delay-deterministic.vhd"; # file 5
+af .is_vhdl 1;
+f "/data/cae/sn10/SFPGA/lib/vhdl_sim/synplify.vhd"; # file 6
+af .is_vhdl 1;
+f "/data/cae/sn10/SFPGA/lib/vhd/unsigned.vhd"; # file 7
+af .is_vhdl 1;
+f "/data/cae/sn10/SFPGA/lib/vhd/arith.vhd"; # file 8
+af .is_vhdl 1;
+f "/data/cae/sn10/SFPGA/lib/vhd/synattr.vhd"; # file 9
+af .is_vhdl 1;
+f "/data/cae/sn10/SFPGA/lib/xilinx/unisim.vhd"; # file 10
+af .is_vhdl 1;
+f "/data/cae/sn10/SFPGA/lib/xilinx/compatible_unisim.vhd"; # file 11
+af .is_vhdl 1;
+@E
+@ 
+ftell;
+@E@MR@:4j.Uc(d::(.Uc(dj:4RHkM#RHlp4zaR0Dk;P
+NRG3C0MCsN4DR;P
+NR#3HPDE8R
+4;N3PRHP#_ER8D4N;
+PFR3shHoNRlC"apz4
+";N3PRDoNMuNNsl"#RQahQ"N;
+PbR3NlsNaC$b#LR"HP0_CFO0s
+";N3PRDoNMuNNsllhNC"#RQahQ"N;
+PhRQQ"aRjjjjjjjjjjjjjjj4"N;
+P#R3$kM_#LCsL;R4
+RNP3M#$_LDH_DOCD;R4
+RNPGlO_N"bRD"k0;P
+NRM#$_NLDOL	_F4GR;
+
+
+
+@FR@:4j.Uc((::d.Uc((R:dm;Rm
+RNH3Ds0_HFsolMNCmR""N;
+H#R3$MM_F#N#HloMCRM04
+;
+
+@HR@:4j.Uc(U::d.Uc(UR:cQQjRjN;
+HsR30FD_sMHoNRlC""Qj;R
+b@:@j4::44R:.0CskRk0sCsR0k
+C;b@R@j::44::4.NRVDR#CV#NDCNRVD;#C
+@bR@:4j.Uc((::d.Uc((R:d8mORR
+m;y--------------------------------
+--@
+ 
+
+ftell;
+@E@MR@gc::g(::R4dI	FsR8M_C$DNR08CCHslM0H#H
+O;N3PRHE#P84DR;P
+NR#3H_8PED;R4
+RNP3HFsolhNCMR"_D8CN;$"
+RNP3MDNosuNNNlhlRC#";M"
+RNPM;R(
+RNP#_$MEsHCRN"Es;8"
+RNPGkO_#	C_C_CbEsHCNEsO$;R4
+@HR@4c:.::U44.:6_RM8_CDHMMR_D8C_;HM
+RNH3Ds0_HFsolMNCMR"_D8C_"HM;
+
+
+
+@FR@4c:d::U44d:n_RM8_CDFRk0H#M0H8o_C$DNr;(9
+RNH3Ds0_HFsolMNCMR"_D8C_0Fk"s;
+R6@@::d4n4:d:R4(k#MHHplRzRa4DRk0MC_8D\N$33d\D_k0H0M#NCMO
+=SmH#M0H8o_C$DNr
+d9S=QjH#M0H8o_C$DNr;.9
+RNH3Ds0_HFsolMNCDR"kH0_MN#0M"OC;H
+NR$3#M#_kC#s__sbNNRl#"HHM0;R"
+RNHsODFR4"XY;j"
+RNH3M#$_DPNHRN#"0Dk_#HM0ONMC"_d;H
+NRM#$_NLDOL	_F4GR;H
+NR_GOlRNb"0Dk"N;
+HhRQQ"aRjjjjjjjjjjjjjjj4"s;
+R6@@::d4n4:d:R4(k#MHHplRzRa4DRk0MC_8D\N$33c\D_k0H0M#NCMO
+=SmH#M0H8o_C$DNr
+c9S=QjH#M0H8o_C$DNr;d9
+RNH3Ds0_HFsolMNCDR"kH0_MN#0M"OC;H
+NR$3#M#_kC#s__sbNNRl#"HHM0;R"
+RNHsODFRj"XY;4"
+RNH3M#$_DPNHRN#"0Dk_#HM0ONMC"_c;H
+NRM#$_NLDOL	_F4GR;H
+NR_GOlRNb"0Dk"N;
+HhRQQ"aRjjjjjjjjjjjjjjj4"s;
+R6@@::d4n4:d:R4(k#MHHplRzRa4DRk0MC_8D\N$336\D_k0H0M#NCMO
+=SmH#M0H8o_C$DNr
+69S=QjH#M0H8o_C$DNr;c9
+RNH3Ds0_HFsolMNCDR"kH0_MN#0M"OC;H
+NR$3#M#_kC#s__sbNNRl#"HHM0;R"
+RNHsODFRj"XY;j"
+RNH3M#$_DPNHRN#"0Dk_#HM0ONMC"_6;H
+NRM#$_NLDOL	_F4GR;H
+NR_GOlRNb"0Dk"N;
+HhRQQ"aRjjjjjjjjjjjjjjj4"s;
+R6@@::d4n4:d:R4(k#MHHplRzRa4DRk0MC_8D\N$33.\D_k0H0M#NCMO
+=SmH#M0H8o_C$DNr
+.9S=QjH#M0H8o_C$DNr;49
+RNH3Ds0_HFsolMNCDR"kH0_MN#0M"OC;H
+NR$3#M#_kC#s__sbNNRl#"HHM0;R"
+RNHsODFR4"XY;4"
+RNH3M#$_DPNHRN#"0Dk_#HM0ONMC"_.;H
+NRM#$_NLDOL	_F4GR;H
+NR_GOlRNb"0Dk"N;
+HhRQQ"aRjjjjjjjjjjjjjjj4"s;
+R6@@::d4n4:d:R4(k#MHHplRzRa4DRk0MC_8D\N$33n\D_k0H0M#NCMO
+=SmH#M0H8o_C$DNr
+n9S=QjH#M0H8o_C$DNr;69
+RNH3Ds0_HFsolMNCDR"kH0_MN#0M"OC;H
+NR$3#M#_kC#s__sbNNRl#"HHM0;R"
+RNHsODFRj"XY;4"
+RNH3M#$_DPNHRN#"0Dk_#HM0ONMC"_n;H
+NRM#$_NLDOL	_F4GR;H
+NR_GOlRNb"0Dk"N;
+HhRQQ"aRjjjjjjjjjjjjjjj4"s;
+R6@@::d4n4:d:R4(k#MHHplRzRa4DRk0MC_8D\N$33(\D_k0H0M#NCMO
+=SmH#M0H8o_C$DNr
+(9S=QjH#M0H8o_C$DNr;n9
+RNH3Ds0_HFsolMNCDR"kH0_MN#0M"OC;H
+NR$3#M#_kC#s__sbNNRl#"HHM0;R"
+RNHsODFRj"XY;j"
+RNH3M#$_DPNHRN#"0Dk_#HM0ONMC"_(;H
+NRM#$_NLDOL	_F4GR;H
+NR_GOlRNb"0Dk"N;
+HhRQQ"aRjjjjjjjjjjjjjjj4"s;
+R6@@::d4n4:d:R4(k#MHHplRzRa4DRk0MC_8D\N$334\D_k0H0M#NCMO
+=SmH#M0H8o_C$DNr
+49S=QjMC_8DM_H;H
+NR03sDs_FHNoMl"CRD_k0H0M#NCMO"N;
+H#R3$kM_#_Cs#N_bs#NlRM"HH"0R;H
+NRFsDOXR"4"Yj;H
+NR$3#MN_PD#HNRk"D0M_H#M0NO4C_"N;
+H$R#MD_LN_O	LRFG4N;
+HORG_blNRk"D0
+";NQHRhRQa"jjjjjjjjjjjj4jjj
+";b@R@j::44::4.sR0k0CRsRkC0Csk;R
+b@:@j4::44R:.V#NDCNRVDR#CV#NDCy;
+---------------------------------@-
+ 
+
+
+
+ftell;
+@E@MR@.c:4::(.44:nFRIs8	RC$DN_#0C0CR8D_N$00C#_ONsEN;
+PHR3#8PED;R4
+RNP3_H#PDE8R
+4;N3PR#_$MVblNRF"Is\	R"F/ElPC/Dj#H.D/P#MH/_D8CNP$/E#8DsHO/M00_F#_NO3HHP\E8"F
+Is\	R"F/ElPC/Dj#H.D/P#MH/_D8CNP$/E#8Ds8O/C$DNu	NO38PE\I"
+FRs	\E"/F/lCPHD#jP./D/#HMC_8D/N$PDE8#/sOMC_8D3N$P\E8"F
+Is\	R"F/ElPC/Dj#H.D/P#MH/_D8CNP$/E#8DsMO/_D8CN8$-Cs0ClHHM#O0H38PE\""
+;
+
+
+
+@HR@.c:.::U...:jCR8D_N$00C#_RHM8NCD$C_0#H0_MN;
+HsR30FD_sMHoNRlC"D8CN0$_C_#0H;M"
+@FR@.c:d::U..d:4CR8D_N$00C#_0FkRD8CN0$_C_#0F;k0
+RNH3Ds0_HFsolMNC8R"C$DN_#0C0k_F0
+";s@R@cn:d:d.:nd:4RsIF	_RM8NCD$CR80lCsH#MH0RHOMC_8D_N$H0M#
+_SM8_CDH8M=C$DN_#0C0M_H
+_SM8_CDF=k08NCD$C_0#F0_k
+0;b@R@j::44::4.sR0k0CRsRkC0Csk;R
+b@:@j4::44R:.V#NDCNRVDR#CV#NDCC;
+;
+
+
+

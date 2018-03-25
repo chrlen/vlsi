@@ -1,0 +1,20 @@
+#:C0     
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   SPARC M2.1 O.40d
+#Current Working Directory:
+#:D   /home/vlsi02/vlsi/n_delay/imp
+#Host Name:
+#:H   ipc694.inf-ra.uni-jena.de
+#Date/Time:
+#:T   Thu Feb  1 17:38:10 2018
+#------------------------------
+	#Reading map.ncd...
+	#Loading device for application Rf_Device from file '3s700a.nph' in environment /data/cae/ise13_1/ISE/.
+	#   "delay_test" is an NCD, version 3.2, device xc3s700an, package fgg484, speed -4
+	#Design creation date: 2018.02.01.16.24.22
+	#WARNING:FPGAEditor:589 - Constraint file not found, or cannot be read.
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes

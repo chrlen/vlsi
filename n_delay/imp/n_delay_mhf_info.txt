@@ -1,0 +1,27 @@
+// Xilinx design hierarchy information file produced by netgen (O.40d) 
+// The information in this file is useful for 
+//   - Design hierarchy relationship between modules 
+//   - Bottom up compilation order (VHDL simulation) 
+//   - SDF file annotation (VHDL simulation) 
+//
+//  Design Name : delay_test
+//
+//  Module      : The name of the hierarchical design module.
+//  Instance    : The instance name used in the parent module.
+//  Design File : The name of the file that contains the module.
+//  SDF File    : The SDF file associated with the module.
+//  SubModule   : The sub module(s) contained within a given module.
+//     Module, Instance : The sub module and instance names.
+
+  Module      : n_delay
+  Instance    : n_delay_inst
+  Design File : n_delay_sim.vhd
+  SDF File    : n_delay_sim.sdf
+  SubModule   : NONE
+
+  Module      : n_delay
+  Design File : n_delay.vhd
+  SDF File    : n_delay.sdf
+  SubModule   : n_delay
+       Module : n_delay, Instance : n_delay_inst
+

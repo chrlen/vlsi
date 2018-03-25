@@ -1,0 +1,45 @@
+(DELAYFILE
+  (SDFVERSION "3.0")
+  (DESIGN "n_delay")
+  (DATE "Thu Feb  1 17:24:48 2018")
+  (VENDOR "Xilinx")
+  (PROGRAM "Xilinx SDF Writer")
+  (VERSION "O.40d")
+  (DIVIDER /)
+  (VOLTAGE 1.14)
+  (TEMPERATURE 85)
+  (TIMESCALE 1 ps)
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE delay_test_in_ibuf)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 0 )( 0 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_OBUF")
+    (INSTANCE delay_test_out_obuf)
+      (DELAY
+        (ABSOLUTE
+          (PORT I ( 80 ))
+          (IOPATH I O ( 3055 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE delay_test_in_IFF_IMUX)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 909 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE delay_test_out_OUTPUT_OFF_OMUX)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 1189 ))
+        )
+      )
+  )
+)

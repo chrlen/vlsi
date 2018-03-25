@@ -1,0 +1,79 @@
+Release 13.1 Map O.40d (lin64)
+Xilinx Map Application Log File for Design 'delay_test'
+
+Design Information
+------------------
+Command Line   : map -cm speed -detail -u -o map.ncd n_delay.ngd n_delay.pcf 
+Target Device  : xc3s700an
+Target Package : fgg484
+Target Speed   : -4
+Mapper Version : spartan3a -- $Revision: 1.55 $
+Mapped Date    : Thu Feb  1 17:24:20 2018
+
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to
+'2100@ipc627'.
+INFO:Security:52 - The LM_LICENSE_FILE environment variable is set to
+'2100@ipc627'.
+INFO:Security:54 - 'xc3s700an' is a WebPack part.
+WARNING:Security:43 - No license file was found in the standard Xilinx license
+directory.
+WARNING:Security:44 - No license file was found.
+       Please run the Xilinx License Configuration Manager
+       (xlcm or "Manage Xilinx Licenses")
+       to assist in obtaining a license.
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
+----------------------------------------------------------------------
+Mapping design into LUTs...
+Writing file map.ngm...
+Running directed packing...
+Running delay-based LUT packing...
+Running related packing...
+Updating timing models...
+Writing design file "map.ncd"...
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:    0
+Logic Utilization:
+  Number of 4 input LUTs:                 7 out of  11,776    1%
+Logic Distribution:
+  Number of occupied Slices:              4 out of   5,888    1%
+    Number of Slices containing only related logic:       4 out of       4 100%
+    Number of Slices containing unrelated logic:          0 out of       4   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:           7 out of  11,776    1%
+  Number of bonded IOBs:                  2 out of     372    1%
+
+  Number of RPM macros:            1
+Average Fanout of Non-Clock Nets:                1.00
+
+Peak Memory Usage:  473 MB
+Total REAL time to MAP completion:  3 secs 
+Total CPU time to MAP completion:   3 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Mapping completed.
+See MAP report file "map.mrp" for details.

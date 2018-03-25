@@ -1,0 +1,7 @@
+@P:  Worst Slack : NA
+@P: delay_test Part : xc3s50atq144-4
+@P: delay_test I/O primitives : 2
+@P: delay_test I/O Register bits : 0
+@P: delay_test Register bits (Non I/O) : 0 (0%)
+@P: delay_test Total Luts : 7 (0%)
+@P:  CPU Time : 0h:00m:01s

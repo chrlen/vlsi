@@ -1,0 +1,5 @@
+WORK ./lib/work 2 WORK_MHDL_SNPS_INTERNAL
+WORK_MHDL_SNPS_INTERNAL ./lib/work 2 -
+SIMPRIM /data/cae/ise13_1/ISE/vhdl/lib/sn10/RHEL5/simprim 2 -
+UNISIM /data/cae/ise13_1/ISE/vhdl/lib/sn10/RHEL5/unisim 2 -
+DEFAULT . 2 -

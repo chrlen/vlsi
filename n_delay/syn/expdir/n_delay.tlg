@@ -1,0 +1,6 @@
+@N: CD630 :"/home/vlsi02/vlsi/n_delay/vhdlsrc/n_delay.vhd":21:7:21:16|Synthesizing work.delay_test.delay_test_arch 
+@N: CD630 :"/home/vlsi02/vlsi/n_delay/vhdlsrc/n_delay.vhd":9:7:9:13|Synthesizing work.n_delay.deterministic 
+@N: CD630 :"/data/cae/sn10/SFPGA/lib/xilinx/unisim.vhd":24783:7:24783:10|Synthesizing unisim.lut1.lut 
+Post processing for unisim.lut1.lut
+Post processing for work.n_delay.deterministic
+Post processing for work.delay_test.delay_test_arch
